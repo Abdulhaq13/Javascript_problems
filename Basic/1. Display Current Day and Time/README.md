@@ -2,9 +2,7 @@
 
 ## Problem
 
-Write a JavaScript program to display the **current day and time** in the following format:
-
-**Sample Output**
+Write a JavaScript program that displays the **current day and time** in the following format:
 
 ```
 Today is : Tuesday.
@@ -13,47 +11,48 @@ Current time is : 10 PM : 30 : 38
 
 ---
 
-## Description
+## About This Exercise
 
-This program retrieves the **current date and time** using JavaScript's built-in `Date` object and formats the output to display:
+This small program uses JavaScript to get the **current date and time** and print it in a readable format. It shows the name of the current day and the current time using the **12-hour clock format (AM/PM)**.
 
-* The **current day of the week**
-* The **current time in 12-hour format**
-* The appropriate **AM / PM indicator**
-* Proper formatting for **minutes and seconds**
+The exercise mainly helps in understanding how to work with JavaScript's **Date object** and how to format values like hours, minutes, and seconds.
 
 ---
 
-## Concepts Used
+## What This Program Does
 
-This exercise helps practice several important JavaScript concepts:
+The program performs the following steps:
 
-* The **Date object**
-* Working with **arrays**
+* Creates a list of all days of the week
+* Uses JavaScript's `Date` object to get the current date and time
+* Determines the current day using `getDay()`
+* Converts the 24-hour time into a **12-hour format**
+* Adds leading zeros to minutes and seconds when needed
+* Handles special cases like **Noon** and **Midnight**
+* Displays the final formatted result in the console
+
+---
+
+## Concepts Practiced
+
+This exercise covers some important beginner JavaScript concepts:
+
+* JavaScript **Date object**
+* **Arrays**
 * **Conditional statements**
 * **Ternary operators**
 * **String formatting**
-* Converting **24-hour time to 12-hour format**
-* Handling **special cases like Midnight and Noon**
+* Basic **time conversion logic**
 
 ---
 
-## Approach
+## Example Output
 
-1. Create an array containing the names of the days of the week.
-2. Use the `Date` object to get the current date and time.
-3. Retrieve the day index using `getDay()` and map it to the corresponding day name.
-4. Extract the current hour, minutes, and seconds.
-5. Convert the hour from **24-hour format to 12-hour format**.
-6. Determine whether the time is **AM or PM**.
-7. Add leading zeros to minutes and seconds if needed.
-8. Handle special cases such as **Noon** and **Midnight**.
-9. Print the formatted output to the console.
-
----
-
-## JavaScript Solution
-
-```javascript
-function
 ```
+Today is: Tuesday
+Current time is: 10 PM : 30 : 38
+```
+
+---
+
+This problem is part of my **JavaScript practice exercises** and helps strengthen understanding of working with dates and time in JavaScript.
