@@ -16,8 +16,7 @@ function currentDayTime() {
   const day = now.getDay();
   console.log(`Today is: ${storeDay[day]}`);
   let hour = now.getHours();
-  // let minutes = now.getMinutes();
-  let minutes = 1;
+  let minutes = now.getMinutes();
   let seconds = now.getSeconds();
 
   let period = hour >= 12 ? " PM " : " AM ";
